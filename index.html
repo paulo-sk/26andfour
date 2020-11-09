@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26andfour</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="body">  
+    <!--nav e servidor/pc-->
+    <div class="container">
+        <header>
+            <a href="#">
+                <img src="img/logo.svg" alt="26andfour logo" class="logo">
+            </a>
+            <span>
+                <a href="#" class="hide-desktop">
+                    <img src="img/search.png" alt="" class="search-btn" id="search">
+                </a>
+                <input type="text" placeholder="Search..." class="search-bar show-desktop hide-mobile" id="search-bar">
+                
+            </span>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="togle-menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="img/server.svg" alt="server ilustration" class="server">
+
+            <h1>Web Hosting For The Modern Era</h1>
+            <p class="subhead">Go serverless and pay only for what you use.</p>
+
+            <img src="img/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <!--descriçao do produto-->
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/icon-1.svg" alt="calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, inventore! Saepe molestiae quibusdam aut! Vel sunt ipsum aspernatur totam amet voluptatum, fugit error, enim quidem illo omnis delectus sapiente ratione.</p>
+                </li>
+                <li>
+                    <img src="img/icon-2.svg" alt="folder icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, inventore! Saepe molestiae quibusdam aut! Vel sunt ipsum aspernatur totam amet voluptatum, fugit error, enim quidem illo omnis delectus sapiente ratione.</p>
+                </li>
+                <li>
+                    <img src="img/icon-3.svg" alt="phone icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, inventore! Saepe molestiae quibusdam aut! Vel sunt ipsum aspernatur totam amet voluptatum, fugit error, enim quidem illo omnis delectus sapiente ratione.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--depoimentos-->
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="img/user1.png" alt="user testemonial">
+                        <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis repudiandae minima totam aliquam amet consequatur! Quae, expedita exercitationem</blockquote>
+                        <figcaption>-Janne Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/user2.png" alt="user testemonial">
+                        <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis repudiandae minima totam aliquam amet consequatur! Quae, expedita exercitationem</blockquote>
+                        <figcaption>-John Colin</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Start your free trail now!</h2>
+        <a href="#"class="cta">Get started</a>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="img/logo-white.svg" class="logo" alt="logo">
+                </a>
+                <ul class="footer-links">
+                    <p class="address">Brasilia, DF<br>Brasil</p>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy police</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        var img_search = document.getElementById('search');
+        var open_search = document.getElementById('search-bar');
+        var body = document.getElementById('body');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+        img_search.addEventListener('click', function(e) {
+            open_search.classList.toggle('hide-mobile');
+            img_search.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+
+</body>
+</html>
